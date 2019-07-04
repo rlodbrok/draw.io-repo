@@ -45,3 +45,6 @@ Examples
 * HTTPS / REST / JSON
 * HTTP / SOAP / XML
 * SAPRFC / ALE / IDOC
+
+# The drawio format
+Earlyer i mentioned it is xml-based, but after investigation you notice it does not seem that way; so what is going-on here? Wel, the native format is a compressed xml mxGraph using base64 encoding. While it is easy to decode, if you want to save it directly in a readable format you should export it as "uncompressed xml".
