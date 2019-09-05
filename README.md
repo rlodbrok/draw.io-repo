@@ -48,7 +48,7 @@ Reminder: DFD arrows represents the direction of the data-flow, NOT the directio
 Besides identifying the Initiator by specifying PUSH/PULL in the flow direction you shall also specify the used protocols. Important protocol details often differ based on the target audience, therefore we recommend the following Pattern: 
 
 ```
-> Network Protocol(s) / Application Protocol(s) / File Format(s)
+Network Protocol(s) / Application Protocol(s) / File Format(s)
 ```
 
 Examples
