@@ -1,3 +1,5 @@
+[[TOC]]
+
 # About
 
 This repository provides libraries, templates and samples for the diagramming software Draw.io. The online diagramming tool Draw.io is a free and open source service supporting multiple browsers. This online tool can be run both online or locally using a portable executable - thus no local administrator access, network access, expensive license and no vendor lock-in. The native file format is fully xml-based (so it can be parsed) and the application supports multiple import/export formats. Additionally: Draw.io has many build-in diagram libraries, you can import your own online libraries (ex: maintained on GitHub), save-to & preview-in online services (ex: Google Drive), share & edit concurrently, use container shapes and even has basic add-on support.
@@ -18,7 +20,7 @@ As we move along we might provide some recommendations and opinions, here are al
 
 * Electrical one-line diagram (in Dutch: eendraadschema).
 
-# Github Library file : LibRagnar2.xml
+# Library file : LibRagnar2.xml
 
 RAW link: https://raw.githubusercontent.com/rlodbrok/draw.io/master/LibRagnar2.xml (can be used for directly loading library into draw.io).
 
@@ -62,7 +64,7 @@ Examples
 * HTTP / SOAP / XML
 * SAPRFC / ALE / IDOC
 
-# Github Library file : eendraadschema.xml
+# Library file : eendraadschema.xml
 
 Electrical one-line diagram symbols. 
 
