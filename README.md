@@ -1,5 +1,12 @@
-[[TOC]]
-<!-- TOC -->autoauto- [1. About](#1-about)auto    - [1.1. Diagram types](#11-diagram-types)auto- [2. Library file : LibRagnar2.xml](#2-library-file--libragnar2xml)auto    - [2.1. DFD or Data Flow Diagrams](#21-dfd-or-data-flow-diagrams)auto- [3. Library file : eendraadschema.xml](#3-library-file--eendraadschemaxml)auto    - [3.1. information in Dutch](#31-information-in-dutch)auto- [4. The Draw.io format](#4-the-drawio-format)autoauto<!-- /TOC -->
+<!-- TOC -->
+- [1. About](#1-about)
+    - [1.1. Diagram types](#11-diagram-types)
+- [2. Library file : LibRagnar2.xml](#2-library-file--libragnar2xml)
+    - [2.1. DFD or Data Flow Diagrams](#21-dfd-or-data-flow-diagrams)
+- [3. Library file : eendraadschema.xml](#3-library-file--eendraadschemaxml)
+    - [3.1. information in Dutch](#31-information-in-dutch)
+- [4. The Draw.io format](#4-the-drawio-format)
+<!-- /TOC -->
 
 <a id="markdown-1-about" name="1-about"></a>
 # 1. About
