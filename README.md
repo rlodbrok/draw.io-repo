@@ -4,17 +4,23 @@ This repository provides libraries, templates and samples for the diagramming so
 
 Enough sales pitch, they are not paying me, this is just my personal viewpoint... go here for info: https://about.draw.io/.
 
-# Diagram types
+## Diagram types
 
 Diagram choices often depend upon the company culture, target deployment stack and audience. Creating diagrams should make you think **hard** about what you want to represent and achieve. You should be able to start abstract and high level while completing and become more specific as you progress. 
 
-As we move along we might provide some recommendations and opinions, here are already some opinionated suggestions: 
+### IT related diagrams
+
+As we move along we might provide some recommendations and opinions, here are already some opinionated suggestions:
 * Avoid using the following diagrams by default: flowcharts & UML
 * Consider starting with: BPMN, ArchiMate, DFD (updated style)
 
+### other diagrams
+
+* Electrical one-line diagram (in Dutch: eendraadschema).
+
 # Github Library file : LibRagnar2.xml
 
-RAW link: https://raw.githubusercontent.com/rlodbrok/draw.io/master/LibRagnar2.xml 
+RAW link: https://raw.githubusercontent.com/rlodbrok/draw.io/master/LibRagnar2.xml (can be used for directly loading library into draw.io).
 
 ## DFD or Data Flow Diagrams
 
@@ -55,6 +61,18 @@ Examples
 * HTTPS / REST / JSON
 * HTTP / SOAP / XML
 * SAPRFC / ALE / IDOC
+
+# Github Library file : eendraadschema.xml
+
+Electrical one-line diagram symbols. 
+
+RAW link: https://raw.githubusercontent.com/rlodbrok/draw.io/master/eendraadschema.xml (can be used for directly loading library into draw.io).
+
+This library contains basic shapes for electrical one-line diagram symbols. Be aware, the names in the library are in Dutch (English version on demand only).
+
+## information in Dutch
+
+De standard draw.io bibliotheek voor electrische diagrammen is niet nuttig voor reglementaire eendraadschema's. De symbolen in deze bibliotheek zijn een eerste versie voor het tekenen van elektrische eendraadschema's. Je kan de RAW link direct gebruiken om de bibliotheek te openen in de editor via: File > Open Library.
 
 # The Draw.io format
 
