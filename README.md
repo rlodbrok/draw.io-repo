@@ -2,10 +2,10 @@
 - [1. About](#1-about)
     - [1.1. Diagram types](#11-diagram-types)
 - [2. Library file : LibRagnar2.xml](#2-library-file--libragnar2xml)
-    - [2.1. DFD or Data Flow Diagrams](#21-dfd-or-data-flow-diagrams)
-- [3. Library file : eendraadschema.xml](#3-library-file--eendraadschemaxml)
+    - [2.1. Hybrid DFD (Data Flow Diagrams)](#21-hybrid-dfd-data-flow-diagrams)
+- [3. Library file : eendraadschema.xml (Electrical diagrams)](#3-library-file--eendraadschemaxml-electrical-diagrams)
     - [3.1. information in Dutch](#31-information-in-dutch)
-- [4. The Draw.io format](#4-the-drawio-format)
+- [4. Remark: the Draw.io library file-format](#4-remark-the-drawio-library-file-format)
 <!-- /TOC -->
 
 <a id="markdown-1-about" name="1-about"></a>
@@ -35,8 +35,8 @@ As we move along we might provide some recommendations and opinions, here are al
 
 RAW link: https://raw.githubusercontent.com/rlodbrok/draw.io/master/LibRagnar2.xml (can be used for directly loading library into draw.io).
 
-<a id="markdown-21-dfd-or-data-flow-diagrams" name="21-dfd-or-data-flow-diagrams"></a>
-## 2.1. DFD or Data Flow Diagrams
+<a id="markdown-21-hybrid-dfd-data-flow-diagrams" name="21-hybrid-dfd-data-flow-diagrams"></a>
+## 2.1. Hybrid DFD (Data Flow Diagrams)
 
 DFD represents flow of data for a logical process or a physical system, providing context for the outputs and inputs of each entity. DFD is an excellent communication tool between User, System Designer and System Engineers.
 
@@ -76,8 +76,8 @@ Examples
 * HTTP / SOAP / XML
 * SAPRFC / ALE / IDOC
 
-<a id="markdown-3-library-file--eendraadschemaxml" name="3-library-file--eendraadschemaxml"></a>
-# 3. Library file : eendraadschema.xml
+<a id="markdown-3-library-file--eendraadschemaxml-electrical-diagrams" name="3-library-file--eendraadschemaxml-electrical-diagrams"></a>
+# 3. Library file : eendraadschema.xml (Electrical diagrams)
 
 Electrical one-line diagram symbols. 
 
@@ -90,7 +90,7 @@ This library contains basic shapes for electrical one-line diagram symbols. Be a
 
 De standard draw.io bibliotheek voor electrische diagrammen is niet nuttig voor reglementaire eendraadschema's. De symbolen in deze bibliotheek zijn een eerste versie voor het tekenen van elektrische eendraadschema's. Je kan de RAW link direct gebruiken om de bibliotheek te openen in de editor via: File > Open Library.
 
-<a id="markdown-4-the-drawio-format" name="4-the-drawio-format"></a>
-# 4. The Draw.io format
+<a id="markdown-4-remark-the-drawio-library-file-format" name="4-remark-the-drawio-library-file-format"></a>
+# 4. Remark: the Draw.io library file-format
 
 Earlier I mentioned it is xml-based, but after investigation you notice it does not seem that way - so what is going-on here? The native format is a compressed xml mxGraph using base64 encoding. While it is easy to decode, if you want to save it directly in a readable format you should export it as "uncompressed xml".
