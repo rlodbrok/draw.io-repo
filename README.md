@@ -9,13 +9,15 @@
 <!-- /TOC -->
 
 <a id="markdown-1-about" name="1-about"></a>
+
 # 1. About
 
-This repository provides libraries, templates and samples for the diagramming software Draw.io. The online diagramming tool Draw.io is a free and open source service supporting multiple browsers. This online tool can be run both online or locally using a portable executable - thus no local administrator access, network access, expensive license and no vendor lock-in. The native file format is fully xml-based (so it can be parsed) and the application supports multiple import/export formats. Additionally: Draw.io has many build-in diagram libraries, you can import your own online libraries (ex: maintained on GitHub), save-to & preview-in online services (ex: Google Drive), share & edit concurrently, use container shapes and even has basic add-on support.
+This repository provides recommendations, libraries, templates and samples for the diagramming software Draw.io. The online diagramming tool Draw.io is a free and open source service supporting multiple browsers. This online tool can be run both online or locally using a portable executable - thus no local administrator access, network access, expensive license and no vendor lock-in. The native file format is fully xml-based (so it can be parsed) and the application supports multiple import/export formats. Additionally: Draw.io has many build-in diagram libraries, you can import your own online libraries (ex: maintained on GitHub), save-to & preview-in online services (ex: Google Drive), share & edit concurrently, use container shapes and even has basic add-on support.
 
 Enough sales pitch, they are not paying me, this is just my personal viewpoint... go here for info: https://about.draw.io/.
 
 <a id="markdown-11-diagram-types" name="11-diagram-types"></a>
+
 ## 1.1. Diagram types
 
 Diagram choices often depend upon the company culture, target deployment stack and audience. Creating diagrams should make you think **hard** about what you want to represent and achieve. You should be able to start abstract and high level while completing and become more specific as you progress. 
@@ -24,18 +26,26 @@ Diagram choices often depend upon the company culture, target deployment stack a
 
 As we move along we might provide some recommendations and opinions, here are already some opinionated suggestions:
 * Avoid using the following diagrams by default: flowcharts & UML
-* Consider starting with: BPMN, ArchiMate, DFD (updated style)
+* Consider starting with: BPMN, ArchiMate, DFD (updated style). 
+* Refine details with: sequence diagram or more specialized [area-specific] diagrams.
+* For Project Management, the following sequence has been most useful to me: mindmap a WBS (tasks & group activities) > PERT (graph dependencies automated) > CPM (path analysis & duration) > Gantt (simplified)
 
-### 1.1.2. other diagrams
+### 1.1.2. using PlantUML in drawio
+
+TODO: *include demo and sample links.*
+
+### 1.1.3. other diagrams
 
 * Electrical one-line diagram (in Dutch: eendraadschema).
 
 <a id="markdown-2-library-file--libragnar2xml" name="2-library-file--libragnar2xml"></a>
+
 # 2. Library file : LibRagnar2.xml
 
 RAW link: https://raw.githubusercontent.com/rlodbrok/draw.io/master/LibRagnar2.xml (can be used for directly loading library into draw.io).
 
 <a id="markdown-21-hybrid-dfd-data-flow-diagrams" name="21-hybrid-dfd-data-flow-diagrams"></a>
+
 ## 2.1. Hybrid DFD (Data Flow Diagrams)
 
 DFD represents flow of data for a logical process or a physical system, providing context for the outputs and inputs of each entity. DFD is an excellent communication tool between User, System Designer and System Engineers.
@@ -62,6 +72,7 @@ Reminder: DFD arrows represents the direction of the data-flow, NOT the directio
 * Mid-arrow information should provide context, like: PUSH/PULL, protocol(s), ...
 * Arrow ends can contain optional properties, examples: network ports for (S)ource & (D)estination, IP addresses, ...
 * Alternative adapter designations are also possible (abbreviated): (I)nitiator, (S)erver, (P)rovider, ...
+TODO: *elaborate on why certain terminology can cause confusion*
 
 #### 2.1.2.2. DFD Arrows context can also contain Protocol designations
 
@@ -77,6 +88,7 @@ Examples
 * SAPRFC / ALE / IDOC
 
 <a id="markdown-3-library-file--eendraadschemaxml-electrical-diagrams" name="3-library-file--eendraadschemaxml-electrical-diagrams"></a>
+
 # 3. Library file : eendraadschema.xml (Electrical diagrams)
 
 Electrical one-line diagram symbols. 
@@ -86,11 +98,15 @@ RAW link: https://raw.githubusercontent.com/rlodbrok/draw.io/master/eendraadsche
 This library contains basic shapes for electrical one-line diagram symbols. Be aware, the names in the library are in Dutch (English version on demand only).
 
 <a id="markdown-31-information-in-dutch" name="31-information-in-dutch"></a>
+
 ## 3.1. information in Dutch
 
-De standard draw.io bibliotheek voor electrische diagrammen is niet nuttig voor reglementaire eendraadschema's. De symbolen in deze bibliotheek zijn een eerste versie voor het tekenen van elektrische eendraadschema's. Je kan de RAW link direct gebruiken om de bibliotheek te openen in de editor via: File > Open Library.
+De standard draw.io bibliotheek voor electrische diagrammen is waarschijnlijk (nog) niet geschikt voor reglementaire eendraadschema's. De symbolen in deze bibliotheek zijn een eerste versie voor het tekenen van elektrische eendraadschema's. Je kan de RAW link direct gebruiken om de bibliotheek te openen in de editor via: File > Open Library.
 
 <a id="markdown-4-remark-the-drawio-library-file-format" name="4-remark-the-drawio-library-file-format"></a>
+
+TODO: *include sample **link** to position/situation and wire diagram.*
+
 # 4. Remark: the Draw.io library file-format
 
 Earlier I mentioned it is xml-based, but after investigation you notice it does not seem that way - so what is going-on here? The native format is a compressed xml mxGraph using base64 encoding. While it is easy to decode, if you want to save it directly in a readable format you should export it as "uncompressed xml".
