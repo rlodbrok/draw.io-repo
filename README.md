@@ -18,8 +18,6 @@ Earlier I mentioned it is xml-based, but after investigation you notice it does 
 
 When saving diagrams you might also considder saving it as a Scalable Vector Graphic with drawio in the filename, like so: **filename.drawio.svg**.
 
-<a id="markdown-11-diagram-types" name="11-diagram-types"></a>
-
 ## 1.1. Diagram types
 
 Diagram choices often depend upon the company culture, target deployment stack and audience. Creating diagrams should make you think **hard** about what you want to represent and achieve. You should be able to start abstract and high level while completing and become more specific as you progress. 
@@ -47,8 +45,6 @@ PlantUML
 # 2. Library file : LibRagnar2.xml
 
 RAW link: https://raw.githubusercontent.com/rlodbrok/draw.io/master/LibRagnar2.xml (can be used for directly loading library into draw.io) - see the [License File](./LICENSE.md).
-
-<a id="markdown-21-hybrid-dfd-data-flow-diagrams" name="21-hybrid-dfd-data-flow-diagrams"></a>
 
 ## 2.1. Hybrid DFD (Data Flow Diagrams)
 
@@ -101,10 +97,6 @@ RAW link: https://raw.githubusercontent.com/rlodbrok/draw.io/master/eendraadsche
 
 This library contains basic shapes for electrical one-line diagram symbols. Be aware, the names in the library are in Dutch (English version on demand only).
 
-<a id="markdown-31-information-in-dutch" name="31-information-in-dutch"></a>
-
 ## 3.1. information in Dutch
 
 De standard draw.io bibliotheek voor electrische diagrammen is waarschijnlijk (nog) niet geschikt voor reglementaire eendraadschema's. De symbolen in deze bibliotheek zijn een eerste versie voor het tekenen van elektrische eendraadschema's. Je kan de RAW link direct gebruiken om de bibliotheek te openen in de editor via: File > Open Library.
-
-<a id="markdown-4-remark-the-drawio-library-file-format" name="4-remark-the-drawio-library-file-format"></a>
