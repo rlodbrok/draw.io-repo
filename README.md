@@ -110,3 +110,7 @@ TODO: *include sample **link** to position/situation and wire diagram.*
 # 4. Remark: the Draw.io library file-format
 
 Earlier I mentioned it is xml-based, but after investigation you notice it does not seem that way - so what is going-on here? The native format is a compressed xml mxGraph using base64 encoding. While it is easy to decode, if you want to save it directly in a readable format you should export it as "uncompressed xml".
+
+# License
+
+See the [License File](./LICENSE.md).
