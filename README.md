@@ -16,6 +16,8 @@ This repository provides recommendations, libraries, templates and samples for t
 
 Enough sales pitch, they are not paying me, this is just my personal viewpoint... go here for info: https://about.draw.io/.
 
+See the [License File](./LICENSE.md).
+
 <a id="markdown-11-diagram-types" name="11-diagram-types"></a>
 
 ## 1.1. Diagram types
@@ -30,9 +32,15 @@ As we move along we might provide some recommendations and opinions, here are al
 * Refine details with: sequence diagram or more specialized [area-specific] diagrams.
 * For Project Management, the following sequence has been most useful to me: mindmap a WBS (tasks & group activities) > PERT (graph dependencies automated) > CPM (path analysis & duration) > Gantt (simplified)
 
-### 1.1.2. using PlantUML in drawio
+### 1.1.2. inserting generated diagrams in drawio
 
-TODO: *include demo and sample links.*
+Mermaid
+* https://www.drawio.com/blog/mermaid-diagrams
+* https://mermaid.js.org/intro/
+
+PlantUML
+* https://www.drawio.com/blog/plantuml
+* https://plantuml.com/guide
 
 ### 1.1.3. other diagrams
 
@@ -110,7 +118,3 @@ TODO: *include sample **link** to position/situation and wire diagram.*
 # 4. Remark: the Draw.io library file-format
 
 Earlier I mentioned it is xml-based, but after investigation you notice it does not seem that way - so what is going-on here? The native format is a compressed xml mxGraph using base64 encoding. While it is easy to decode, if you want to save it directly in a readable format you should export it as "uncompressed xml".
-
-# License
-
-See the [License File](./LICENSE.md).
