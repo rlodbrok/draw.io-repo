@@ -1,22 +1,22 @@
 <!-- TOC -->
 - [1. About](#1-about)
-    - [1.1. Diagram types](#11-diagram-types)
 - [2. Library file : LibRagnar2.xml](#2-library-file--libragnar2xml)
-    - [2.1. Hybrid DFD (Data Flow Diagrams)](#21-hybrid-dfd-data-flow-diagrams)
 - [3. Library file : eendraadschema.xml (Electrical diagrams)](#3-library-file--eendraadschemaxml-electrical-diagrams)
-    - [3.1. information in Dutch](#31-information-in-dutch)
-- [4. Remark: the Draw.io library file-format](#4-remark-the-drawio-library-file-format)
 <!-- /TOC -->
 
 <a id="markdown-1-about" name="1-about"></a>
 
-# 1. About
+# 1. About Draw.io and some recommendations
 
 This repository provides recommendations, libraries, templates and samples for the diagramming software Draw.io. The online diagramming tool Draw.io is a free and open source service supporting multiple browsers. This online tool can be run both online or locally using a portable executable - thus no local administrator access, network access, expensive license and no vendor lock-in. The native file format is fully xml-based (so it can be parsed) and the application supports multiple import/export formats. Additionally: Draw.io has many build-in diagram libraries, you can import your own online libraries (ex: maintained on GitHub), save-to & preview-in online services (ex: Google Drive), share & edit concurrently, use container shapes and even has basic add-on support.
 
 Enough sales pitch, they are not paying me, this is just my personal viewpoint... go here for info: https://about.draw.io/.
 
-See the [License File](./LICENSE.md).
+## Remark: the Draw.io library file-format
+
+Earlier I mentioned it is xml-based, but after investigation you notice it does not seem that way - so what is going-on here? The native format is a compressed xml mxGraph using base64 encoding. While it is easy to decode, if you want to save it directly in a readable format you should export it as "uncompressed xml".
+
+When saving diagrams you might also considder saving it as a Scalable Vector Graphic with drawio in the filename, like so: **filename.drawio.svg**.
 
 <a id="markdown-11-diagram-types" name="11-diagram-types"></a>
 
@@ -40,17 +40,13 @@ Mermaid
 
 PlantUML
 * https://www.drawio.com/blog/plantuml
-* https://plantuml.com/guide
-
-### 1.1.3. other diagrams
-
-* Electrical one-line diagram (in Dutch: eendraadschema).
+* https://plantuml.com/guide (lots of ads)
 
 <a id="markdown-2-library-file--libragnar2xml" name="2-library-file--libragnar2xml"></a>
 
 # 2. Library file : LibRagnar2.xml
 
-RAW link: https://raw.githubusercontent.com/rlodbrok/draw.io/master/LibRagnar2.xml (can be used for directly loading library into draw.io).
+RAW link: https://raw.githubusercontent.com/rlodbrok/draw.io/master/LibRagnar2.xml (can be used for directly loading library into draw.io) - see the [License File](./LICENSE.md).
 
 <a id="markdown-21-hybrid-dfd-data-flow-diagrams" name="21-hybrid-dfd-data-flow-diagrams"></a>
 
@@ -101,7 +97,7 @@ Examples
 
 Electrical one-line diagram symbols. 
 
-RAW link: https://raw.githubusercontent.com/rlodbrok/draw.io/master/eendraadschema.xml (can be used for directly loading library into draw.io).
+RAW link: https://raw.githubusercontent.com/rlodbrok/draw.io/master/eendraadschema.xml (can be used for directly loading library into draw.io) - see the [License File](./LICENSE.md).
 
 This library contains basic shapes for electrical one-line diagram symbols. Be aware, the names in the library are in Dutch (English version on demand only).
 
@@ -112,9 +108,3 @@ This library contains basic shapes for electrical one-line diagram symbols. Be a
 De standard draw.io bibliotheek voor electrische diagrammen is waarschijnlijk (nog) niet geschikt voor reglementaire eendraadschema's. De symbolen in deze bibliotheek zijn een eerste versie voor het tekenen van elektrische eendraadschema's. Je kan de RAW link direct gebruiken om de bibliotheek te openen in de editor via: File > Open Library.
 
 <a id="markdown-4-remark-the-drawio-library-file-format" name="4-remark-the-drawio-library-file-format"></a>
-
-TODO: *include sample **link** to position/situation and wire diagram.*
-
-# 4. Remark: the Draw.io library file-format
-
-Earlier I mentioned it is xml-based, but after investigation you notice it does not seem that way - so what is going-on here? The native format is a compressed xml mxGraph using base64 encoding. While it is easy to decode, if you want to save it directly in a readable format you should export it as "uncompressed xml".
